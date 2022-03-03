@@ -68,7 +68,7 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
 
                     <group>
                         <group string="Print Date Two" >
-                            <field name='is_date_two_two' />
+                            <field name='is_date_two' />
                             <field name="date_seprator_two"/>
                             <field name="date_formate_two" attrs="{'required':[('is_date_two','=',True)]}"/>
                             <field name='year_formate_two' attrs="{'required':[('is_date_two','=',True)]}"/>
