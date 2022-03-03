@@ -98,6 +98,18 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
+                    <group string="Amount In Digit Two">
+                        <group>
+                            <field name='is_amount_two' />
+                            <field name="is_currency_two"/>
+                            <field name='is_star_two' />
+                        </group>
+                        <group>
+                            <field name='amt_m_top_two' string='From Top' attrs="{'required':[('is_amount_two','=',True)]}"/>
+                            <field name='amt_m_left_two' string='From Left' attrs="{'required':[('is_amount_two','=',True)]}"/>
+                        </group>
+                    </group>
+
 
                     <group string="Amount In Words">
                         <group>

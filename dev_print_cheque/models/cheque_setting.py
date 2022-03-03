@@ -69,6 +69,13 @@ class cheque_setting(models.Model):
 
     is_currency = fields.Boolean('Print Currency')
 
+    is_amount_two = fields.Boolean('Print Amount', default=True)
+    amt_m_top_two = fields.Float('Amt From Top', default=185)
+    amt_m_left_two = fields.Float('Amt From Left', default=550)
+    is_star_two = fields.Boolean('Print Star', help="if true then print 3 star before and after Amount", default=True)
+
+    is_currency_two = fields.Boolean('Print Currency')
+
     is_amount_word = fields.Boolean('Print Amount Words', default=True)
     is_word_bold = fields.Boolean('Word Font Bold')
     word_in_f_line = fields.Float('Split Words After', default=5,
