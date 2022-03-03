@@ -66,6 +66,26 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
                         </group>
                     </group>
 
+                    <group>
+                        <group string="Print Date Two" >
+                            <field name='is_date_two_two' />
+                            <field name="date_seprator_two"/>
+                            <field name="date_formate_two" attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name='year_formate_two' attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name='date_m_top_two' string='From Top' attrs="{'required':[('is_date_two','=',True)]}"/>
+                        </group>
+                        <group string="Date Digit From Left">
+                            <field name='f_d_m_left_two' attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name='s_d_m_left_two' attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name='t_d_m_left_two' attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name='fo_d_m_left_two' attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name='fi_d_m_left_two' attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name='si_d_m_left_two' attrs="{'required':[('is_date_two','=',True)]}"/>
+                            <field name="se_d_m_left_two" attrs="{'required':[('is_date_two','=',True),('year_formate_two','=','yyyy')]}"/>
+                            <field name='e_d_m_left_two' attrs="{'required':[('is_date_two','=',True),('year_formate_two','=','yyyy')]}"/>
+                        </group>
+                    </group>
+
                     <group string="Amount In Digit">
                         <group>
                             <field name='is_amount' />

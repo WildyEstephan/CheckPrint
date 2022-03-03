@@ -46,6 +46,22 @@ class cheque_setting(models.Model):
     
     date_seprator = fields.Char('Seperator')
 
+    #Date Two
+    is_date_two = fields.Boolean('Print Date', default=True)
+    date_formate_two = fields.Selection([('dd_mm', 'DD MM'), ('mm_dd', 'MM DD')], string='Date Formate', default='dd_mm')
+    year_formate_two = fields.Selection([('yy', 'YY'), ('yyyy', 'YYYY')], string='Year Format', default='yy')
+    date_m_top_two = fields.Float('Date From Top', default=700)
+    f_d_m_left_two = fields.Float('First Digit', default=550)
+    s_d_m_left_two = fields.Float('Second Digit', default=560)
+    t_d_m_left_two = fields.Float('Third Digit', default=590)
+    fo_d_m_left_two = fields.Float('Fourth Digit', default=600)
+    fi_d_m_left_two = fields.Float('Fifth Digit', default=625)
+    si_d_m_left_two = fields.Float('Six Digit', default=635)
+    se_d_m_left_two = fields.Float('Seven Digit', default=645)
+    e_d_m_left_two = fields.Float('Eight Digit', default=655)
+
+    date_seprator_two = fields.Char('Seperator')
+
     is_amount = fields.Boolean('Print Amount', default=True)
     amt_m_top = fields.Float('Amt From Top', default=185)
     amt_m_left = fields.Float('Amt From Left', default=550)
